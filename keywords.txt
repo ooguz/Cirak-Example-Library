@@ -1,0 +1,12 @@
+# keywords.txt for Robot
+
+Robot	KEYWORD1
+robot	KEYWORD1
+
+ileriGit	KEYWORD2
+geriGit	KEYWORD2
+sagaDon	KEYWORD2
+solaDon	KEYWORD2
+cwDon	KEYWORD2
+ccwDon	KEYWORD2
+vites	KEYWORD2
