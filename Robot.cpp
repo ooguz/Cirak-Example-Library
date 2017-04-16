@@ -34,11 +34,6 @@ void Robot::ileriGit() {
 	analogWrite(_sag, hiz);
 }
 
-void Robot::geriGit() {
-	analogWrite(_sol, 0 - hiz);
-	analogWrite(_sag, 0 - hiz);
-}
-
 void Robot::sagaDon() {
 	analogWrite(_sol, hiz);
 	analogWrite(_sag, 0);	
@@ -49,14 +44,10 @@ void Robot::solaDon() {
 	analogWrite(_sag, 0);
 }
 
-void Robot::cwDon() {
-	analogWrite(_sol, hiz);
-	analogWrite(_sag, 0 – hiz);
-}
+void Robot::dur() {
 
-void Robot::ccwDon() {
-	analogWrite(_sol, 0 - hiz);
-	analogWrite(_sag, hiz);
+	analogWrite(_sol, 0);
+	analogWrite(_sag, 0);
 }
 
 int Robot::vites(int vitesKac) {

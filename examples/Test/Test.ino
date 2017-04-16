@@ -1,6 +1,6 @@
 /* 
 
-Robot Arduino Library v0.0.1
+Test Example
 Copyright (C) 2017 Özcan Oğuz
 
 This program is free software: you can redistribute it and/or modify
@@ -18,22 +18,26 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 */
 
-#ifndef Robot_h
-#define Robot_h
 
-class Robot {
+#include <Robot.h>
 
-	public:
-		Robot(int solMotor, int sagMotor);
-		void ileriGit();
-		void sagaDon();
-		void solaDon();
-		void dur();
-		int vites(int vitesKac);
-		int hiz;
-	private:
-		int _sol;
-		int _sag;
-};
+Robot robot(13, 12);
 
-#endif
+void setup() {
+
+	robot.vites(5);
+
+}
+
+void loop() {
+
+	robot.ileriGit();
+	delay(500);
+	robot.sagaDon();
+	delay(500);
+	robot.solaDon();
+	delay(500);
+	robot.dur();
+	delay(500);
+
+}
